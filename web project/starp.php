@@ -61,29 +61,19 @@ div.sub {
         margin: auto;
         margin: 20 0 0 450px;
         padding: 80px;
-        background: #000080;
+        background: #131D47;
         border-radius: 15px ;
 
 }
-.thank{
-	width: 382px;
-         margin-left: 15px;
-  color: white;
-  font-weight: bold;
-  float: right;
-  font-size: 22px;
-  line-height: 20px;
-  cursor: pointer;
-  transition: 0.3s;
-}
+
 
 h2{
     text-align: center;
-    color: #6abadeba;
+    color: #5DDADB;
     padding: 20px;
 }
 label{
-    color: #6abadeba;
+    color: #5DDADB;
     font-size: 17px;
 }
 #Uname{
@@ -92,6 +82,7 @@ label{
     border: none;
     border-radius: 3px;
     padding-left: 8px;
+	
 }
 #ema{
     width: 300px;
@@ -112,7 +103,7 @@ label{
 
 }
 span{
-    color: white;
+    color: #5DDADB;
     font-size: 17px;
 }
 .alert {
@@ -185,7 +176,7 @@ span{
 
 <label>Email <br/><input type='email' name='useremail' id="ema" placeholder='e@example.com'><br/></label>
 
-<label> Write your message : <br/>
+<label > Write your message : <br/>
 <textarea rows = "5" cols = "50" name = "description" >
    Message ...
          </textarea><br/>
@@ -218,7 +209,6 @@ if(isset($_POST['usercheck'])){
 $query = "INSERT INTO member (nameuser, email) VALUES (' " .$_POST['username']. " ', ' " .$_POST['useremail']. " ') ";​
 mysqli_query($con,$query) ​
 or die( mysqli_connect_error());
-
 */
 }
 
