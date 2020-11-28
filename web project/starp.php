@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<link rel="icon" href="ww.png">
+<head>
+    <meta charset="utf-8">
     <style>
       body{background: linear-gradient(90deg, #131D47 50%, #5DDADB 50%);}
       .logo{position: relative;
@@ -59,7 +61,7 @@ div.sub {
         width: 382px;
         overflow: hidden;
         margin: auto;
-        margin: 20 0 0 450px;
+        margin: 20px 0px 0px 450px;
         padding: 80px;
         background: #131D47;
         border-radius: 15px ;
@@ -82,7 +84,7 @@ label{
     border: none;
     border-radius: 3px;
     padding-left: 8px;
-	
+
 }
 #ema{
     width: 300px;
@@ -117,8 +119,8 @@ span{
   bottom:600px;
 }
     </style>
-    <meta charset="utf-8">
-    <title>stsrt page</title>
+
+    <title>zero day</title>
   </head>
   <body>
     <div class="logo" >
@@ -170,13 +172,13 @@ span{
 
 
 <div class="connect">
-<form action='' method ='POST'>
-<h2>Connect us</h2 <br/>
-<label>Name<br/><input type='text' name='username' id="Unname"><br/></label>
+<form action='pagephp' method ='POST'>
+<h2>Connect us</h2> <br>
+<label>Name<br><input type='text' name='username' id="Unname"><br></label>
 
 <label>Email <br/><input type='email' name='useremail' id="ema" placeholder='e@example.com'><br/></label>
 
-<label > Write your message : <br/>
+<label> Write your message : <br/>
 <textarea rows = "5" cols = "50" name = "description" >
    Message ...
          </textarea><br/>
@@ -209,11 +211,12 @@ if(isset($_POST['usercheck'])){
 $query = "INSERT INTO member (nameuser, email) VALUES (' " .$_POST['username']. " ', ' " .$_POST['useremail']. " ') ";​
 mysqli_query($con,$query) ​
 or die( mysqli_connect_error());
+
 */
 }
 
 ?>
-</div>
+
 <h4 class="by">by LAYAN  FATIMA  GHADIR</h4>
 
   </body>
