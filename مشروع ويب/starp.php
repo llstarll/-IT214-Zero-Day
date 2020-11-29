@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="stylezd.css">
+<link rel="icon" href="logo2.png">
 <?php
 
 /*
